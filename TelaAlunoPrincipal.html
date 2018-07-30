@@ -18,7 +18,7 @@
 
   		#main-carousel.carousel.slide {
     	width: 100%; 
-    	max-width: 720px; !important
+    	max-width: 1080px; !important
 
 		}
 
@@ -93,6 +93,23 @@
 			margin-left: 205px;
 		}
 
+		li a{
+			color: white;
+		}
+
+		ul {
+			background-color: #0B614B;
+		}
+
+		li a:hover:not(.active){
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.active {
+			background-color: #4CAF50;
+		}
+
 
 
     </style>
@@ -110,9 +127,9 @@
 
         <div class = "col-sm-offset-3 col-sm-6">
 		<ul class = "nav nav-tabs nav1" style="color: white">
-			<li><a href = "#" style = "background-color: #4CAF50;color: white">Home</a></li>
-			<li><a href = "telaAlunoDisciplinas.html"style = "color: white">Disciplinas</a></li>
-			<li><a href = "TelaAlunoNotas.html" style = "color: white">Notas</a></li>
+			<li><a class = "active" href = "#" style="color:white">Home</a></li>
+			<li><a href = "telaAlunoDisciplinas.html">Disciplinas</a></li>
+			<li><a href = "TelaAlunoNotas.html">Notas</a></li>
 			
 		</ul>
 		</div><br>
@@ -128,18 +145,34 @@
 				<li data-target = "#main-carousel" data-slide-to = "1"></li>
 				<li data-target = "#main-carousel" data-slide-to = "2"></li>
 			</ol>
-			<div class = "carousel-inner" role = "listbox">
+			<div class = "carousel-inner">
 				<div class = "item active">
 					<div class = "row">
-		
-						<div class="col-sm-12 text-center">
-                  			<img class="img-responsive" src="https://www2.ifal.edu.br/campus/site/palmeira-noticias/comunicacao-do-ifal-palmeira-durante-o-periodo-eleitoral/nota.png/@@images/ab14b801-f7f9-4158-9276-d534b8b8da35.png" style="width: 720px;height:480px;">
+						<img class="img-responsive" src="https://www2.ifal.edu.br/campus/site/palmeira-noticias/comunicacao-do-ifal-palmeira-durante-o-periodo-eleitoral/nota.png/@@images/ab14b801-f7f9-4158-9276-d534b8b8da35.png" style="width: 1200px;height:700px;">
+					</div>
 
-                  		</div>
+                 </div>
+
+                <div class = "item">
+                	<div class = "row">
+                  		<img class="img-responsive" src="https://www2.ifal.edu.br/noticias/confira-o-resultado-preliminar-do-edital-de-bolsa-produtividade-2018/resultado-parcial/@@images/c577d74c-9bec-48ba-bfec-7fcd2e76a9ff.jpeg" style="width: 1200px;height:700px;">
+                  	</div>
+
                 </div>
-				</div>
+
+                <div class="item">
+                	<div class = "row">
+                  		<img class="img-responsive" src="https://www2.ifal.edu.br/noticias/prpi-seleciona-subprojetos-para-compor-proposta-institucional-que-vai-disputar-chamada-nacional/submissao-de-projetos/@@images/44dfa393-fecb-4345-ab94-59dc7eba9b45.jpeg" style="width: 1200px;height:700px;">
+                  	</div>
+                </div>
+
+            </div>
+
+               
 			</div>
 
+			
+</div>
 
 						
 
@@ -151,13 +184,7 @@
 					<span class = "glyphicon glyphicon-chevron-right"></span>
 				</a>
 				
-			</div>
-			
-		</div>
 		
-	</div>
-
-
 
 
 
