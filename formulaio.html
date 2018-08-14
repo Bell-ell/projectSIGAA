@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Curso de bootstrap 3</title>
+    <meta name="description" content="curso de bootstrap 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css" integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+
+    <style>
+    	.formulario {
+    		margin-top: 10rem;
+    		padding: 2rem;
+    		border-radius: 1rem;
+    		background-color: #2d3436;
+    		box-shadow: 0 0 15px -2px rgba(0,0,0,.7);
+    	}
+
+    	body {
+    		background-color: #2d3436;
+    	}
+
+    	.cor {
+    		color: green;
+    	}
+
+      label,input {
+        color: white;
+      }
+
+      .m {
+        margin-left: 15px;
+      }
+
+    </style>
+</head>
+<body>
+<div  class = "container">
+	<div class = "row">
+		<div class = "col-sm-offset-2 col-sm-6">
+			<div class = "row">
+				<div class = "col-sm-4"><br>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/500px-Logotipo_IFET.svg.png" class = "img-responsive" alt = "" width = "50" height = "50">
+				</div><br>
+				<div class = "col-sm-8">
+					<h2 class = "text-center" style="color: white">Portal do Monitor</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+	<div class = "container-fluid">
+
+		<form class = "col-sm-offset-3 col-sm-6 formulario">
+
+			<h3 class = "text-center" style="color: white">Insira seu usuário e  turno de atividade</h3><br>
+
+            <div class = "row">
+            <div class = "col-sm-6">
+				<label for = "inputNome" class = "sr-only"></label><h5 style="color: white">Usuario</h5>
+				<input type="text" id = "inputNome" class = "form-control" placeholder = "ex: Polenta" required autofocus>
+            </div>
+
+           <br>
+              <br>
+              <br>
+              <div class="row"><br><br>
+                <div class = "m col-sm-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Matutino</label>
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="m col-sm-6">
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Vespertino</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class = "row">
+		    <div class="btn-group btn-group-lg col-sm-offset-10">
+				<a href="horario.html" class = "btn btn-lg btn-success" type = "button">Entrar</a>
+			</div>
+            </div>
+
+
+
+		</form>
+
+
+	</div>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

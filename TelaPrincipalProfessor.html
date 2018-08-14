@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Curso de bootstrap 3</title>
+    <meta name="description" content="curso de bootstrap 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    	.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+  		min-height: 10px; 
+  		
+
+  		}
+
+  		#main-carousel.carousel.slide {
+    	width: 100%; 
+    	max-width: 720px; !important
+
+		}
+
+		.nav1 {
+    		top: 0;
+    		margin-top: -43px;
+    		border-top: 1px solid transparent;
+
+    	}
+
+    	.nav2 {
+    		margin-top: 20px;
+    	}
+
+    	.nav3 {
+
+    		margin-top: -245px;
+
+    	}
+
+    	body {
+    		background-color: #D32F2F;
+    	}
+
+    	.carousel-inner > .item > img {
+    		position-relative;
+    		min-width: 100%;
+    		height: 200px; /* Altura da imagem dentro do Carousel */
+  			padding: 200px;
+  			padding-right: 10px;
+  			padding-left: 10px;
+		}
+
+
+
+
+		.h {
+			margin-top: 0;
+			text-indent: -400px;
+			
+
+		}
+
+		tr {
+  			height: 0px;
+  			margin-top: 0;
+
+		}
+
+		td {
+ 			width: 20px;
+ 			margin-top: 0;
+  			
+		}
+
+		table {
+			width: -10px;
+			height: 50px;
+			margin-top: 0;
+		}
+
+		.table-hover > tbody > tr:hover{
+			background-color: #d63031;
+			color: #d63031;
+		}
+
+		.nav > li > a:hover{
+    		background-color:#4CAF50;
+		}
+
+		.c {
+			margin-left: 115px;
+		}
+
+		.indicadores{
+			margin-left: -100px;
+		} 
+
+		li a{
+			color: white;
+		}
+
+		ul {
+			background-color: #0B614B;
+		}
+
+		li a:hover:not(.active){
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.active {
+			background-color: #4CAF50;
+		}
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+	<div class = "container-fluid">
+		<div class = "row"><br>
+
+		<div class = "col-sm-offset-0.5 col-sm-4">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/500px-Logotipo_IFET.svg.png" class = "img-responsive center-block" alt = "" width = "50" height = "50">
+		</div>
+
+        <div class = "col-sm-offset-3 col-sm-6">
+		<ul class = "nav nav-tabs nav1" style="color: white">
+			<li><a class = "active" href = "#" style="color:white">Home</a></li>
+			<li><a href = "telaAlunoDisciplinas.html">Disciplinas</a></li>
+			<li><a href = "TelaAlunoNotas.html">Notas</a></li>
+			
+		</ul>
+		</div><br>
+	</div>
+</div>
+	<h2 class = "text-center nav2" style="color: white">Noticias</h2>
+<br><br>
+
+	<div class = "container col-sm-offset-0.7 c">
+		<div id = "main-carousel" class = "carousel slide col-sm-offset-2" data-ride = "carousel">
+			<ol class = "carousel-indicators indicadores">
+				<li data-target = "#main-carousel" data-slide-to = "0" class = "active"></li>
+				<li data-target = "#main-carousel" data-slide-to = "1"></li>
+				<li data-target = "#main-carousel" data-slide-to = "2"></li>
+			</ol>
+			<div class = "carousel-inner c" role = "listbox">
+				<div class = "item active">
+					<div class = "row">
+		
+						<div class="col-sm-12">
+                  			<img class="img-responsive" src="https://www2.ifal.edu.br/campus/site/palmeira-noticias/comunicacao-do-ifal-palmeira-durante-o-periodo-eleitoral/nota.png/@@images/ab14b801-f7f9-4158-9276-d534b8b8da35.png" style="width: 1200px;height:480px;">
+
+                  		</div>
+					</div>
+				</div>
+
+				<div class = "item">
+					<div class = "row">
+						<div class="col-sm-12">
+                  			<img class="img-responsive" src="https://www2.ifal.edu.br/campus/site/palmeira-noticias/comunicacao-do-ifal-palmeira-durante-o-periodo-eleitoral/nota.png/@@images/ab14b801-f7f9-4158-9276-d534b8b8da35.png" style="width: 1200px;height:480px;">
+
+                  		</div>
+					</div>
+				</div>
+
+
+
+						
+
+				<a class = "carousel-control left" href = "#main-carousel" data-slide = "prev">
+					<span class = "glyphicon glyphicon-chevron-left"></span>
+				</a>
+
+				<a class = "carousel-control right" href = "#main-carousel" data-slide = "next">
+					<span class = "glyphicon glyphicon-chevron-right"></span>
+				</a>
+				
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

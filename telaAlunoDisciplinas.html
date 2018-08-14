@@ -18,16 +18,17 @@
 
     	.nav2 {
     		margin-top: 20px;
+    		text-indent: 14px;
     	}
 
     	.nav3 {
 
-    		margin-top: -245px;
+    		margin-top: -285px;
 
     	}
 
     	body {
-    		background-color: #0B614B;
+    		background-color: #2d3436;
     	}
 
 
@@ -42,21 +43,29 @@
 
 		.h {
 			margin-top: 0;
-			text-indent: -400px;
+			text-indent: -505px;
 			
 
+		}
+
+		th {
+			border: 3px solid black;
 		}
 
 		tr {
   			height: 0px;
   			margin-top: 0;
+  			color: white;
+  			border: 3px solid black;
+
 
 		}
 
 		td {
  			width: 20px;
  			margin-top: 0;
-  			
+  			border: 3px solid black;
+
 		}
 
 		table {
@@ -65,9 +74,13 @@
 			margin-top: 0;
 		}
 
+		a {
+			color: white;
+		}
+
 		.table-hover > tbody > tr:hover{
-			background-color: #d63031;
-			color: #d63031;
+			background-color: #4CAF50;
+			color: white;
 		}
 
 		.nav > li > a:hover{
@@ -84,6 +97,25 @@
 			
 		}
 
+
+
+		.active {
+			background-color: #4CAF50;
+		}
+
+		.tabela {
+			margin-top: 30px;
+			border: 3px solid #4CAF50;
+
+
+		}
+
+		p {
+			color: black;
+		}
+
+
+
 		
 
 
@@ -99,13 +131,42 @@
 		</div>
 
         <div class = "col-sm-offset-3 col-sm-6">
-		<ul class = "nav nav-tabs nav1" style="color: #00b894">
-			<li><a href = "TelaAlunoPrincipal.html" style = "color: white">Home</a></li>
-			<li><a class = "active" href = "#" style = "color: white">Disciplinas</a></li>
-			<li><a href = "TelaAlunoNotas.html" style = "color: white">Notas</a></li>
+		<ul class = "nav nav-tabs nav1" style="color: #00b894"> 
+			<li><a href = "TelaAlunoMain.html">Home<span class="badge">3</span></a></li>
+			<li><a class = "active" href = "#">Disciplinas</a></li>
+			<li><a href = "telaAlunoMonitoria.html">Monitoria</a></li>
+			<li><a href = "TelaAlunoNotas.html">Notas</a></li>
+
+
+			<li><a data-toggle="modal" data-target="#myModal">Perfil</a></li>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+			  <div class="modal-dialog">
+			  
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Informações do usuário</h4>
+				  </div>
+				  <div class="modal-body">
+				  	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Logotipo_IFET.svg/500px-Logotipo_IFET.svg.png" class = "img-responsive center-block" alt = "" width = "50" height = "50">
+					<p>Nome : Emanuel Araújo Padilha</p>
+					<p>Email : vgtevc@gmail.com</p>
+					<p>Matricula : 12345</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+				
+			  </div>
+			</div>	
 			
 		</ul>
 		</div><br>
+		</div>
 
 		<div class = "row">
 			<div class = "col-sm-offset-3 col-md-4">
@@ -117,13 +178,15 @@
 			</div>
 		</div>
 
+		<div class = "row">
+
 			<div class = "col-md-offset-6 col-md-4">
 			<div class = "table-responsive">
 
-		</div>
-			<table class = "table table-hover">
+
+			<table class = "table table-hover tabela">
 				<thead>
-					<tr style = "color: white">
+					<tr>
 						<th>S</th>
 						<th>T</th>
 						<th>Q</th>
@@ -133,59 +196,59 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr style = "color: white">
-						<td>PROG</td>
-						<td>PROG</td>
-						<td>PROG</td>
-						<td>PROG</td>
-						<td>PROG</td>
+					<tr>
+						<td style="background-color: ">PWEB</td>
+						<td style="background-color: ">POO</td>
+						<td>MAN</td>
+						<td>ADM</td>
+						<td style="background-color: ">ENG</td>
 						<td>13:00</td>
 						
 					</tr>
-					<tr style = "color: white">
-						<td>BD</td>
-						<td>BD</td>
-						<td>BD</td>
-						<td>Manut.</td>
-						<td>Manut.</td>
+					<tr>
+						<td style="background-color: ">PWEB</td>
+						<td style="background-color: ">POO</td>
+						<td>MAN</td>
+						<td>ADM</td>
+						<td>ENG</td>
 						<td>13:50</td>
 						
 					</tr>
 
-					<tr style = "color: white">
-						<td>ENG</td>
-						<td>ENG</td>
-						<td>ENG</td>
-						<td>POO</td>
-						<td>POO</td>
+					<tr>
+						<td>BD</td>
+						<td style="background-color: ">POO</td>
+						<td style="background-color: ">BD</td>
+						<td>ADM</td>
+						<td>ADM</td>
 						<td>14:40</td>
 					</tr>
 
-					<tr style = "color: white">
+					<tr>
+						<td>BD</td>
 						<td>PROG</td>
-						<td>PROG</td>
-						<td>PROG</td>
-						<td>PROG</td>
+						<td style="background-color: ">BD</td>
+						<td style="background-color: ">POO</td>
 						<td>PROG</td>
 						<td>15:50</td>
 						
 					</tr>
-					<tr style = "color: white">
-						<td>BD</td>
-						<td>BD</td>
-						<td>BD</td>
-						<td>Manut.</td>
-						<td>Manut.</td>
+					<tr>
+						<td>ENG</td>
+						<td>PROG</td>
+						<td style="background-color: ">PWEB</td>
+						<td style="background-color: ">POO</td>
+						<td>PROG</td>
 						<td>16:40</td>
 						
 					</tr>
 
-					<tr style = "color: white">
+					<tr>
+						<td>MAN</td>
 						<td>ENG</td>
-						<td>ENG</td>
-						<td>ENG</td>
-						<td>POO</td>
-						<td>POO</td>
+						<td style="background-color: ">PWEB</td>
+						<td>MAN</td>
+						<td>PROG</td>
 						<td>17:30</td>
 					</tr>
 				</tbody>
@@ -193,18 +256,164 @@
 				
 			</table>
 			</div>
+			</div>
 		
 
 		
 
         
 		<div class = "col-sm-offset-3 col-sm-6">
-		<ul class = "nav nav-stacked nav-pills col-md-4 nav3" style="color: #00b894">
-			<li><a href = "#" style = "background-color: #009688; color: white">Introdução a programação</a></li>
-			<li><a href = "#" style = "background-color: #CFD8DC; color: black">Manutenção de computadores</a></li>
-			<li><a href = "#" style = "background-color: #E65100; color: white">Banco de dados</a></li>
-			<li><a href = "#" style = "background-color: #3F51B5; color: white">Programação orientada a objetos</a></li>
-			<li><a href = "#" style = "background-color: #2196F3; color: white">Programação WEB 1</a></li>
+		<ul class = "nav nav-stacked nav-pills col-md-4 nav3">
+			<li><a href = "#" data-toggle="modal" data-target="#myModa" data-tt="tooltip" title="Clique para ver o conteúdo">Introdução a programação</a></li>
+
+			  		<div class="modal fade" id="myModa" role="dialog">
+			  		<div class="modal-dialog">
+			  
+					<!-- Modal content-->
+					<div class="modal-content">
+				  		<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Conteudos</h4>
+				  		</div>
+				  	<div class="modal-body">
+				  		
+							<p>1 Bimestre : Tipo , entrada e saida de dados</p>
+							<p>2 Bimestre : Estruturas condicionais (if , elif , else)</p>
+							<p>3 Bimestre : Estruturas de repetição (for , while)</p>
+							<p>4 Bimestre : Arquivos e listas(vetores)</p>
+				  	</div>
+				  	<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  	</div>
+					</div>
+				
+			  		</div>
+					</div>
+
+			<li><a href = "#" data-toggle="modal" data-target="#myModa1" data-tt="tooltip" title="Clique para ver o conteúdo">Manutenção de computadores</a></li>
+				<div class="modal fade" id="myModa1" role="dialog">
+			  		<div class="modal-dialog">
+			  
+					<!-- Modal content-->
+					<div class="modal-content">
+				  		<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Conteudos</h4>
+				  		</div>
+				  	<div class="modal-body">
+				  		
+							<p>1 Bimestre : Hardware e Software</p>
+							<p>2 Bimestre : Componetes do gabinete</p>
+							<p>3 Bimestre : Prática com componentes</p>
+							<p>4 Bimestre : Montagem do gabinete</p>
+				  	</div>
+				  	<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  	</div>
+					</div>
+				
+			  		</div>
+				</div>
+
+			<li><a href = "#" data-toggle="modal" data-target="#myModa2" data-tt="tooltip" title="Clique para ver o conteúdo">Banco de dados</a></li>
+				<div class="modal fade" id="myModa2" role="dialog">
+			  		<div class="modal-dialog">
+			  
+					<!-- Modal content-->
+					<div class="modal-content">
+				  		<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Conteudos</h4>
+				  		</div>
+				  	<div class="modal-body">
+				  		
+							<p>1 Bimestre : Conceitos relacionais</p>
+							<p>2 Bimestre : Estrutura do banco com brModelo</p>
+							<p>3 Bimestre : Introdução ao MySQL</p>
+							<p>4 Bimestre : Prática com MySQL</p>
+				  	</div>
+				  	<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  	</div>
+					</div>
+				
+			  		</div>
+				</div>
+
+
+			<li><a href = "#" data-toggle="modal" data-target="#myModa3" data-tt="tooltip" title="Clique para ver o conteúdo" >Programação orientada a objetos</a></li>
+				<div class="modal fade" id="myModa3" role="dialog">
+			  		<div class="modal-dialog">
+			  
+					<!-- Modal content-->
+					<div class="modal-content">
+				  		<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Conteudos</h4>
+				  		</div>
+				  	<div class="modal-body">
+				  		
+							<p>1 Bimestre : Encapsulamento</p>
+							<p>2 Bimestre : Herança e polimorfismo</p>
+							<p>3 Bimestre : Conexão ao banco de dados com hibernate</p>
+							<p>4 Bimestre : Banco de dados com interface gráfica</p>
+				  	</div>
+				  	<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  	</div>
+					</div>
+				
+			  		</div>
+				</div>
+
+
+			<li><a href = "#" data-toggle="modal" data-target="#myModa4" data-tt="tooltip" title="Clique para ver o conteúdo" >Programação WEB 1</a></li>
+				<div class="modal fade" id="myModa4" role="dialog">
+			  		<div class="modal-dialog">
+			  
+					<!-- Modal content-->
+					<div class="modal-content">
+				  		<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Conteudos</h4>
+				  		</div>
+				  	<div class="modal-body">
+				  		
+							<p>1 Bimestre : Introdução a linguagem</p>
+							<p>2 Bimestre : CSS,HTML e Bootstrap</p>
+							<p>3 Bimestre : JavaScript</p>
+							<p>4 Bimestre : Aplicação WEB com banco de dados</p>
+				  	</div>
+				  	<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  	</div>
+					</div>
+				
+			  		</div>
+				</div>
+			<li><a href = "#" data-toggle="modal" data-target="#myModa5" data-tt="tooltip" title="Clique para ver o conteúdo" >Administração de redes</a></li>
+				<div class="modal fade" id="myModa5" role="dialog">
+			  		<div class="modal-dialog">
+			  
+					<!-- Modal content-->
+					<div class="modal-content">
+				  		<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Conteudos</h4>
+				  		</div>
+				  	<div class="modal-body">
+				  		<p>1 Bimestre : Configuração básica de rede</p>
+						<p>2 Bimestre : SSH,FTP,PROXY</p>
+						<p>3 Bimestre : APACHE, NGINX</p>
+						<p>4 Bimestre : Monitoramento de rede</p>
+				  	</div>
+				  	<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  	</div>
+					</div>
+				
+			  		</div>
+				</div>
         
 			
 		</ul>
@@ -214,6 +423,7 @@
 	</div>
    
 </div>
+
 </div>
 
 
